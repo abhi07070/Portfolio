@@ -1,0 +1,58 @@
+.service-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.service-section .s-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+.service-section .s-box-container .box {
+    width: 330px;
+    padding: 1.4rem;
+    margin: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.s-box-container .box .icon {
+    font-size: 4.5rem;
+    color: var(--blue-color);
+    border: 2px solid #e3e3e3;
+    padding: 1.5rem;
+    transition: all .3s ease-in-out;
+    border-radius: 5rem;
+}
+
+.service-section .s-box-container .box:hover .icon {
+    background: var(--blue-color);
+    color: var(--white);
+}
+
+.s-box-container .box h4{
+    position: relative;
+    font-size: 2rem;
+    color: #000;
+}
+.s-box-container .box h4::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 30px;
+    height: 1.5px;
+    background: #3e64ff;
+    margin: 0 auto;
+}

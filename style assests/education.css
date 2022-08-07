@@ -1,0 +1,105 @@
+.edu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+/* Education */
+.edu-section .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    gap: 5rem;
+}
+
+/* Left */
+
+.edu-section .skills .left {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 3rem;
+}
+
+.edu-section .skills .left .heading {
+    margin-bottom: 2rem;
+}
+
+.edu-section .skills .left .item {
+    margin-bottom: 2.6rem;
+    margin-left: 14px;
+    position: relative;
+}
+/* .edu-section .skills .left .item p{
+    font-size: 1.7rem;
+} */
+
+.edu-section .skills .left .timeline-wrapper {
+    border-left: 2px solid #e3e3e3;
+}
+
+.edu-section .skills .left .item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--blue-color);
+    border-radius: 50%;
+    margin-left: -21px;
+}
+
+/* Right  */
+.edu-section .skills .right {
+    width: 100%;
+    flex: 1;
+}
+
+.edu-section .skills .skills-wrapper .skill-box h4 {
+    font-size: 1.7rem;
+    color: var(--black-color);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.edu-section .skills .skills-wrapper .skill-box {
+    margin-bottom: 4rem;
+}
+
+.edu-section .skills .skills-wrapper .skill-box .progress-wrap {
+    height: 6px;
+    width: 100%;
+    background: var(--light-black);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000000;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+}
+
+.edu-section .skills .skills-wrapper .skill-box .progress-wrap .progress-bar {
+    display: block;
+    height: 100%;
+    background: var(--blue-color);
+    width: 0;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.edu-section .skills .skills-wrapper .skill-box .progress-wrap .progress-bar .tooltip {
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}

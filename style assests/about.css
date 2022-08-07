@@ -1,0 +1,51 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-section .about-details{
+    margin-top: 5rem;
+}
+.about-me{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.profile{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.profile img{
+    width: 45%;
+    border-radius: 20rem;
+    border: 10px solid #e3e3e3;
+}
+.about-data{
+    flex: 1;
+}
+
+.about-data .h2-txt{
+    text-align: start;
+    font-size: 3rem;
+    margin: 2rem 0;
+    color:var(--blue-color);
+}
+.about-data .h2-txt span{
+    color: var(--black-color);
+}
+.about-data .social-links{
+    margin: 2rem 0;
+}
+.about-data .social-links .links{
+    color: var(--black-color);
+    font-size: 2.5rem;
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.about-data .social-links .links:hover{
+    color:var(--blue-color);
+}
